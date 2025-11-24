@@ -1,0 +1,346 @@
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;;
+    margin: 0;
+}
+ .btn {
+  background-color: #eb3e48;
+  color: white;
+  border: 1px solid #eb3e48;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
+  opacity: 1;
+}
+nav ul li a:hover{
+    color: #eb3e48;
+}
+.btn:hover{
+        background-color: transparent !important;
+    color: #eb3e48;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+        background: rgba(0, 0, 0, 0.97) !important;
+}
+nav img{
+    height: 35px;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto;
+}
+.about_us{
+    background: url(bg_img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:91vh;
+    position: relative;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_us::before{
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    content: "";
+}
+.about_us h1{
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 0;
+    position: relative;
+    z-index: 9;
+
+}
+.about_us h4{
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    z-index: 9;
+    margin-top: 30px;
+    text-decoration: underline;
+
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.products-section {
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+.products-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+}
+.product-card {
+  position: relative;
+  height: 500px;
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.product-card:hover .overlay {
+  transform: translateY(0);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay h3 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #fff;
+  opacity: 0;
+  text-transform: uppercase;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+}
+
+.product-btn {
+  background-color: #eb3e48;
+  color: white;
+  border: 1px solid #eb3e48;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.product-btn:hover{
+    background-color: transparent !important;
+    color: #eb3e48;
+}
+.product-card:hover .product-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+.product-card:hover  .overlay h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+.product-btn:hover {
+  background-color: #eb3e48;
+}
+
+.footer-section {
+  background: linear-gradient(180deg, #000000 0%,#EB3E48 100%);
+  color: #fff;
+  padding: 100px 30px 50px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #EB3E48;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 80px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+
+
+
+
+.detailed-products-section {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.product-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+.product-details {
+  padding: 40px;
+  text-align: left;
+  flex: 1;
+}
+
+.product-details h3 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+.product-details strong {
+  color: #eb3e48;
+}
+
+.product-details .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #eb3e48;
+  color: white;
+  border: 1px solid #eb3e48;
+  padding: 12px 25px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+.product-details .btn:hover {
+  background-color: transparent;
+  color: #eb3e48;
+}
+.product-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+
+.contact-container {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 90%;
+    margin: 100px auto;
+    padding: 60px 40px;
+    font-family: roboto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.contact-container strong {
+    color: #eb3e48;
+}
+
+.social-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-links a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+footer {
+    margin-top: auto;
+}
